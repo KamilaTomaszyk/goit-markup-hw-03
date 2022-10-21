@@ -24,15 +24,16 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+  margin-block: 0;
 }
 .menu {
-  height: 80px;
   width: 100%;
-  border-radius: 0px;
+  padding-bottom: 25px;
+  padding-top: 24px;
   border-bottom: 1px solid var(--second-light-grey);
   display: flex;
   justify-content: center;
-  }
+}
 .menu > .container {
   display: flex;
   justify-content: space-between;
@@ -107,7 +108,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--main-silver);
   text-decoration-line: none;
-  }
+}
 .contact:focus {
   color: var(--main-blue);
 }
@@ -167,6 +168,7 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-block: 0;
 }
 
 .feature-description {
@@ -174,6 +176,7 @@ h1 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-silver);
+  margin-bottom: 0;
 }
 h2 {
   font-weight: 700;
@@ -181,6 +184,7 @@ h2 {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0 0 50px 0;
 }
 .images-services {
   display: flex;
@@ -200,12 +204,17 @@ h2 {
   border-radius: 0px 0px 4px 4px;
   margin: 0;
 }
+.photo-caption-team {
+  padding-block: 30px;
+  background-color: var(--main-white);
+}
 .name-team-member {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0 0 10 0;
 }
 .position-team-member {
   font-size: 16px;
@@ -213,9 +222,17 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-silver);
+  margin: 0;
 }
 .contact-info {
   background: var(--background-grey);
+  width: 100%;
+  height: 252px;
+}
+.contact-info div {
+  display: inline-block;
+  padding-left: calc((100% - 1200px) / 2);
+  padding-block: 60px;
 }
 .logo-footer {
   font-family: "Raleway";
@@ -238,6 +255,7 @@ h2 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-white);
+  margin-top: 20px;
 }
 .footer-contact {
   font-size: 14px;
@@ -253,8 +271,15 @@ h2 {
 .footer-contact:hover {
   color: var(--main-blue);
 }
+
+.filter ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  margin: 0;
+}
 .filter li {
-  display: inline;
+  margin-left: 8px;
 }
 .filter button {
   font-weight: 500;
@@ -276,25 +301,48 @@ h2 {
   background-color: var(--main-blue);
   color: var(--main-white);
 }
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 34px;
+}
+.project-items li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.project-items li:nth-of-type(3n + 3) {
+  margin-right: 0;
+}
+.project-items li:nth-of-type(n + 7) {
+  margin-bottom: 0;
+}
 .project-card {
   width: 370px;
   height: 404px;
   border-style: solid;
   border-width: 1px;
   border-color: var(--light-grey);
+  margin: 0;
 }
 .project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
 }
 .project-type {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-silver);
+  margin: 0;
 }
+.photo-caption {
+  margin: 20px 24px;
+}
+
 .container {
   width: 1200px;
 }
@@ -303,4 +351,7 @@ h2 {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+.team-card div {
+  display: flex;
 }

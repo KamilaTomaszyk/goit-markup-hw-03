@@ -17,18 +17,20 @@
   <body>
     <header class="menu">
       <div class="container">
-        <a class="logo" href="index.html"
-          ><span class="first-word">Web</span
-          ><span class="second-word">Studio</span></a
-        >
-        <nav class="main-navigation">
-          <ul>
-            <li><a class="link-nav" href="#">Agencja</a></li>
-            <li><a class="link-nav" href="portfolio.html">Portfolio</a></li>
-            <li><a class="link-nav" href="#">Kontakt</a></li>
-          </ul>
-        </nav>
-        <ul>
+        <div class="navigation-bar">
+          <a class="logo" href="index.html"
+            ><span class="first-word">Web</span
+            ><span class="second-word">Studio</span></a
+          >
+          <nav class="main-navigation">
+            <ul>
+              <li><a class="link-nav" href="#">Agencja</a></li>
+              <li><a class="link-nav" href="portfolio.html">Portfolio</a></li>
+              <li><a class="link-nav" href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="contacts">
           <li>
             <a class="contact" href="tel:+48111111111"> +48 111 111 111</a>
           </li>
@@ -41,20 +43,19 @@
       </div>
     </header>
     <main>
-      <section class="section filter">
+      <div class="section">
         <div class="container">
-          <ul>
-            <li><button type="button">Wszystkie</button></li>
-            <li><button type="button">Strony</button></li>
-            <li><button type="button">Aplikacje</button></li>
-            <li><button type="button">Dizajn</button></li>
-            <li><button type="button">Marketing</button></li>
-          </ul>
-        </div>
-      </section>
-      <section class="section projects">
-        <div class="container">
-          <ul>
+          <div class="filter">
+            <ul>
+              <li><button type="button">Wszystkie</button></li>
+              <li><button type="button">Strony</button></li>
+              <li><button type="button">Aplikacje</button></li>
+              <li><button type="button">Dizajn</button></li>
+              <li><button type="button">Marketing</button></li>
+            </ul>
+          </div>
+             
+          <ul class="project-items">
             <li>
               <figure class="project-card">
                 <img
@@ -63,7 +64,7 @@
                   height="294"
                   alt="Ekran przedstawiający stronę internetową"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Technocrack</p>
                   <p class="project-type">Strona internetowa</p>
                 </figcaption>
@@ -77,7 +78,7 @@
                   height="294"
                   alt="Grafika z koszykarzami"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Grafika New Orlean vs Golden Star</p>
                   <p class="project-type">Dizajn</p>
                 </figcaption>
@@ -91,7 +92,7 @@
                   height="294"
                   alt="Logo restauracji"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Restauracja Seafood</p>
                   <p class="project-type">Aplikacja</p>
                 </figcaption>
@@ -105,7 +106,7 @@
                   height="294"
                   alt="Zdjęcie słuchawek"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Projekt Prime</p>
                   <p class="project-type">Marketing</p>
                 </figcaption>
@@ -119,7 +120,7 @@
                   height="294"
                   alt="Dwa Pudełka"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Projekt Boxes</p>
                   <p class="project-type">Aplikacja</p>
                 </figcaption>
@@ -133,7 +134,7 @@
                   height="294"
                   alt="Monitor z stroną internetową"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Inspiration has no Borders</p>
                   <p class="project-type">Strona internetowa</p>
                 </figcaption>
@@ -147,7 +148,7 @@
                   height="294"
                   alt="Otwarte strony magazynu"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Magazyn Limited Edition</p>
                   <p class="project-type">Dizajn</p>
                 </figcaption>
@@ -161,7 +162,7 @@
                   height="294"
                   alt="Zawieszka z logo"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Projekt LAB</p>
                   <p class="project-type">Marketing</p>
                 </figcaption>
@@ -175,7 +176,7 @@
                   height="294"
                   alt="Laptop z dłońmi piszącymi na klawiaturze"
                 />
-                <figcaption>
+                <figcaption class="photo-caption">
                   <p class="project-name">Growing Business</p>
                   <p class="project-type">Aplikacja</p>
                 </figcaption>
@@ -183,6 +184,7 @@
             </li>
           </ul>
         </div>
+      </div>
       </section>
     </main>
     <footer class="contact-info">
