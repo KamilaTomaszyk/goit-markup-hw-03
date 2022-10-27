@@ -315,7 +315,9 @@ h2 {
   justify-content: center;
   gap: 30px;
 }
-.project-items li {flex-basis: calc((100% - 60px) / 3);}
+.project-items li {
+  flex-basis: calc((100% - 60px) / 3);
+}
 .project-card {
   width: 370px;
   height: 404px;
