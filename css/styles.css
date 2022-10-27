@@ -38,7 +38,6 @@ ul {
 .menu > .container {
   display: flex;
   gap: 371px;
-  /* justify-content: space-between; */
   align-items: center;
 }
 .navigation-bar {
@@ -76,8 +75,8 @@ ul {
   display: flex;
   gap: 46px;
 }
-.main-navigation li:nth-child(3) {
-  margin-right: 0;
+.main-navigation li {
+  flex-basis: calc((100% - 2 * 46px) / 3);
 }
 .link-nav {
   text-decoration-line: none;
@@ -95,6 +94,9 @@ ul {
 .contacts {
   display: flex;
   gap: 50px;
+}
+.contacts li {
+  flex-basis: calc((100% - 50px) / 2);
 }
 
 .contact {
@@ -159,6 +161,9 @@ h1 {
   display: flex;
   gap: 30px;
 }
+.feature-list li {
+  flex-basis: calc((100% - 90px) / 4);
+}
 .feature {
   font-size: 14px;
   line-height: 1.14;
@@ -185,12 +190,18 @@ h2 {
   display: flex;
   gap: 30px;
 }
+.images-services li {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
 .team {
   background-color: var(--light-pink);
 }
 .photo-team {
   display: flex;
   gap: 30px;
+}
+.photo-team li {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .team-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -274,7 +285,6 @@ h2 {
 .filter ul {
   display: flex;
   justify-content: center;
-  /* padding-bottom: 16px; */
   margin: 0 0 50px;
   gap: 8px;
 }
@@ -305,6 +315,7 @@ h2 {
   justify-content: center;
   gap: 30px;
 }
+.project-items li {flex-basis: calc((100% - 60px) / 3);}
 .project-card {
   width: 370px;
   height: 404px;
