@@ -233,7 +233,6 @@ h2 {
   background: var(--background-grey);
   width: 100%;
   padding-block: 60px;
-  padding-left: calc((100% - 1200px) / 2);
 }
 .contact-info div {
   display: block;
@@ -338,7 +337,6 @@ h2 {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-silver);
-  margin: 0;
 }
 .photo-caption {
   margin: 20px 24px;
@@ -347,6 +345,7 @@ h2 {
 .container {
   width: 1200px;
   padding-inline: 15px;
+  margin: 0 auto;
 }
 .section {
   padding-block: 94px;
